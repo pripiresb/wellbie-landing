@@ -1,0 +1,141 @@
+media:
+  input: src/assets
+  output: /assets
+  extensions: [png, jpg, jpeg, webp, gif, svg, mp4, webm]
+
+content:
+  - name: home
+    label: Página inicial (textos e imagens)
+    type: file
+    path: src/_data/site.json
+    fields:
+      # ── MENU ──
+      - name: nav
+        label: Menu (topo)
+        type: object
+        fields:
+          - name: links
+            label: Links
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Texto, type: string }
+              - { name: url, label: Link (URL), type: string }
+
+      # ── HERO ──
+      - name: hero
+        label: Topo (Hero)
+        type: object
+        fields:
+          - { name: image, label: Imagem de fundo, type: image }
+          - { name: tag, label: Tag (pequeno, em cima), type: string }
+          - { name: headline, label: Título principal, type: text, description: "Use <br> para quebrar linha." }
+          - { name: sub, label: Subtítulo, type: text }
+          - { name: button_label, label: Texto do botão, type: string }
+          - { name: button_url, label: Link do botão, type: string }
+
+      # ── A CIÊNCIA POR TRÁS DO SONO ──
+      - name: problema
+        label: "Seção: A ciência por trás do sono"
+        type: object
+        fields:
+          - { name: image, label: Imagem de fundo, type: image }
+          - { name: tag, label: Tag, type: string }
+          - { name: headline, label: Título, type: text, description: "Use <br> para quebrar linha." }
+          - { name: sub, label: Subtítulo (frase em itálico), type: text }
+          - { name: intro, label: Introdução, type: text }
+          - name: bullets
+            label: Dados científicos (animados)
+            type: object
+            list: true
+            fields:
+              - { name: destaque, label: Destaque (em negrito), type: string }
+              - { name: texto, label: Complemento, type: string }
+              - { name: fonte, label: Fonte (instituição), type: string }
+          - { name: fecho, label: Frase de fechamento, type: text }
+          - { name: ebook_label, label: Texto do botão e-book, type: string, required: false }
+          - { name: ebook_url, label: Link do botão e-book, type: string, required: false }
+
+      # ── PRODUTO 1: MELATONINA ──
+      - name: melatonina
+        label: "Produto 1: Melatonina"
+        type: object
+        fields:
+          - { name: video, label: Vídeo, type: file }
+          - { name: tag, label: Tag, type: string }
+          - { name: headline, label: Título, type: text, description: "Use <br> e <em>itálico</em>." }
+          - { name: sub, label: Descrição, type: text }
+          - { name: specs, label: Características, type: string, list: true }
+          - { name: button_label, label: Texto do botão, type: string }
+          - { name: button_url, label: Link do botão (produto), type: string }
+
+      # ── PRODUTO 2: MAGIC5 ──
+      - name: magic5
+        label: "Produto 2: Magic5"
+        type: object
+        fields:
+          - { name: video, label: Vídeo, type: file }
+          - { name: tag, label: Tag, type: string }
+          - { name: headline, label: Título, type: text, description: "Use <br> e <em>itálico</em>." }
+          - { name: sub, label: Descrição, type: text }
+          - { name: specs, label: Características, type: string, list: true }
+          - { name: button_label, label: Texto do botão, type: string }
+          - { name: button_url, label: Link do botão (produto), type: string }
+
+      # ── KIT RITUAL ──
+      - name: kit
+        label: "Seção: Kit Ritual"
+        type: object
+        fields:
+          - { name: image, label: Imagem, type: image }
+          - { name: tag, label: Tag, type: string }
+          - { name: headline, label: Título, type: text, description: "Use <br> para quebrar linha." }
+          - { name: sub, label: Subtítulo, type: text }
+          - { name: items, label: Itens do kit, type: string, list: true }
+          - { name: button_label, label: Texto do botão, type: string }
+          - { name: button_url, label: Link do botão, type: string }
+
+      # ── DEPOIMENTOS ──
+      - name: depoimentos
+        label: "Seção: Depoimentos"
+        type: object
+        fields:
+          - { name: eyebrow, label: Tag (repetida em cada depoimento), type: string }
+          - name: slides
+            label: Depoimentos
+            type: object
+            list: true
+            fields:
+              - { name: quote, label: Texto do depoimento, type: text }
+              - { name: autor, label: Autor, type: string }
+
+      # ── CTA FINAL ──
+      - name: cta
+        label: "Seção final (Comece essa noite)"
+        type: object
+        fields:
+          - { name: headline, label: Título, type: text, description: "Use <br> para quebrar linha." }
+          - { name: sub, label: Subtítulo, type: string }
+          - name: produtos
+            label: Cards de produto
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Imagem, type: image }
+              - { name: name, label: Nome, type: string }
+              - { name: button_label, label: Texto do botão, type: string }
+              - { name: button_url, label: Link do botão, type: string }
+          - { name: info, label: Selos (frete, parcelamento), type: string, list: true }
+
+      # ── RODAPÉ ──
+      - name: footer
+        label: Rodapé
+        type: object
+        fields:
+          - { name: logo, label: Logo, type: image }
+          - { name: contact_label, label: Label do contato, type: string }
+          - { name: email, label: E-mail, type: string }
+          - { name: phone, label: Telefone, type: string }
+          - { name: copyright, label: Copyright, type: string }
+          - { name: razao_social, label: Razão social, type: string }
+          - { name: cnpj, label: CNPJ, type: string }

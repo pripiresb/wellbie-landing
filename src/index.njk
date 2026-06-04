@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wellbie — Sono com qualidade</title>
 <meta name="description" content="wellbie — suplementos pensados para quem leva o sono a sério. Melatonina e Magic5.">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
   :root {
     --creme:       #EDEAE6;
@@ -183,7 +182,7 @@
 
 <nav id="topo">
   <div class="logo">
-    <a href="#topo" aria-label="Voltar ao topo"><img src="{{ site.footer.logo }}" alt="wellbie" class="logo-img logo-light"></a>
+    <a href="#topo" aria-label="Voltar ao topo"><img src="{{ site.footer.logo | url }}" alt="wellbie" class="logo-img logo-light"></a>
   </div>
   <ul>
     {% for link in site.nav.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
@@ -191,7 +190,7 @@
 </nav>
 
 <section class="hero" style="padding:0;">
-  <img class="hero-bg" src="{{ site.hero.image }}" alt="Mulher acordando descansada">
+  <img class="hero-bg" src="{{ site.hero.image | url }}" alt="Mulher acordando descansada">
   <div class="hero-empty"></div>
   <div class="hero-text">
     <p class="hero-tag">{{ site.hero.tag }}</p>
@@ -202,7 +201,7 @@
 </section>
 
 <section class="problema">
-  <img class="problema-bg" src="{{ site.problema.image }}" alt="Pessoa com insônia">
+  <img class="problema-bg" src="{{ site.problema.image | url }}" alt="Pessoa com insônia">
   <div class="problema-text">
     <p class="section-tag" style="color:var(--nude);">{{ site.problema.tag }}</p>
     <h2 class="problema-headline">{{ site.problema.headline | safe }}</h2>
@@ -230,7 +229,7 @@
 <section class="melatonina" id="produtos">
   <div class="produto-image mel-bg" style="padding:0; overflow:hidden; background:var(--azul);">
     <video autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover; display:block;">
-      <source src="{{ site.melatonina.video }}" type="video/mp4">
+      <source src="{{ site.melatonina.video | url }}" type="video/mp4">
     </video>
   </div>
   <div class="produto-text">
@@ -256,7 +255,7 @@
   </div>
   <div class="produto-image mag-bg" style="padding:0; overflow:hidden; background:var(--cinza);">
     <video autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover; display:block;">
-      <source src="{{ site.magic5.video }}" type="video/mp4">
+      <source src="{{ site.magic5.video | url }}" type="video/mp4">
     </video>
   </div>
 </section>
@@ -271,7 +270,7 @@
     </div>
   </div>
   <div class="kit-image">
-    <img src="{{ site.kit.image }}" alt="Kit Ritual do Sono wellbie">
+    <img src="{{ site.kit.image | url }}" alt="Kit Ritual do Sono wellbie">
     <a href="{{ site.kit.button_url }}" class="btn-kit">{{ site.kit.button_label }}</a>
   </div>
 </section>
@@ -300,7 +299,7 @@
   <div class="produtos-grid">
     {% for p in site.cta.produtos %}
     <div class="produto-card{% if loop.index0 == 0 %} card-mel{% elif loop.index0 == 2 %} card-kit{% endif %}">
-      <div class="produto-card-img"><img src="{{ p.image }}" alt="{{ p.name }} wellbie"></div>
+      <div class="produto-card-img"><img src="{{ p.image | url }}" alt="{{ p.name }} wellbie"></div>
       <div class="produto-card-name">{{ p.name }}</div>
       <a href="{{ p.button_url }}" class="produto-card-btn">{{ p.button_label }}</a>
     </div>
@@ -313,7 +312,7 @@
 
 <footer>
   <div class="logo">
-    <img src="{{ site.footer.logo }}" alt="wellbie" class="logo-img logo-light">
+    <img src="{{ site.footer.logo | url }}" alt="wellbie" class="logo-img logo-light">
   </div>
   <div class="footer-contact">
     <p class="footer-contact-label">{{ site.footer.contact_label }}</p>
@@ -379,19 +378,6 @@
   dots.forEach(d => d.addEventListener('click', () => { goTo(parseInt(d.dataset.index)); start(); }));
   start();
 })();
-</script>
-
-<script>
-  // Login do editor: ao confirmar o convite/login, leva direto ao painel /admin
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
 </script>
 </body>
 </html>

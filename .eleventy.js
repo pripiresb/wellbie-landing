@@ -1,9 +1,11 @@
 module.exports = function (eleventyConfig) {
-  // Copy static assets and the CMS admin panel as-is
+  // Copia as imagens/vídeos como estão
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/admin");
 
   return {
+    // No GitHub Pages o site fica em /wellbie-landing/.
+    // (Quando ligar o domínio próprio wellbie.com.br, trocar para "/".)
+    pathPrefix: "/wellbie-landing/",
     dir: {
       input: "src",
       output: "_site",
