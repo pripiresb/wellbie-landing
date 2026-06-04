@@ -1,38 +1,26 @@
 {
-  "nav": {
-    "links": [
-      { "label": "Quem somos", "url": "#" },
-      { "label": "Produtos", "url": "https://wellbie.lojavirtualnuvem.com.br/produtos/" },
-      { "label": "Contato", "url": "https://wellbie.lojavirtualnuvem.com.br/contato/" }
-    ]
-  },
-  "hero": {
-    "image": "/assets/hero.jpg",
-    "tag": "Sono com qualidade",
-    "headline": "Dormir bem<br>não é luxo.<br>É o hábito que<br>muda tudo.",
-    "sub": "wellbie — suplementos pensados para quem leva o sono a sério.",
-    "button_label": "Conheça os produtos ↓",
-    "button_url": "#produtos"
-  },
   "problema": {
     "image": "/assets/problema.jpg",
     "tag": "Por que você dorme mal",
     "headline": "Você não dorme mal<br>por falta de esforço.",
     "sub": "Cortisol, luz azul, mente que não para, rotina que não respeita o seu ritmo. O problema é real. A solução começa por entendê-lo.",
-    "manifesto": "\"Melatonina ajuda — mas sozinha não resolve. Por isso criamos suplementos que fazem parte de uma solução, não a solução inteira.\""
+    "manifesto": "Suplementos sozinhos não resolvem. Por isso unificamos os suplementos com rotinas de higiene do sono, que trazem uma solução mais completa para seu bem-estar."
   },
-  "melatonina": {
-    "video": "/assets/melatonina.mp4",
-    "tag": "Produto 01",
-    "headline": "Melatonina.<br><em>Do jeito que<br>deveria funcionar.</em>",
-    "sub": "0,21 mg por gota. Sabor maracujá. Solução oral de absorção rápida — sem o excesso das cápsulas de farmácia. A dose certa, no momento certo, direto para o seu organismo.",
-    "specs": [
-      "1 gota = 1 dose · 0,21 mg de melatonina",
-      "Absorção sublingual — age mais rápido que cápsulas",
-      "Sabor maracujá · 30 mL · Solução oral"
-    ],
-    "button_label": "Comprar",
-    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
+  "nav": {
+    "links": [
+      {
+        "label": "Quem somos",
+        "url": "#"
+      },
+      {
+        "label": "Produtos",
+        "url": "https://wellbie.lojavirtualnuvem.com.br/produtos/"
+      },
+      {
+        "label": "Contato",
+        "url": "https://wellbie.lojavirtualnuvem.com.br/contato/"
+      }
+    ]
   },
   "magic5": {
     "video": "/assets/magnesio.mp4",
@@ -46,6 +34,72 @@
     ],
     "button_label": "Comprar",
     "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/"
+  },
+  "depoimentos": {
+    "eyebrow": "Quem já dorme melhor",
+    "slides": [
+      {
+        "quote": "\"O relaxamento era extremamente rápido e quase imediato. Fiquei impressionada com o sono profundo que entrei e acordando descansada. Adorei e já estou adotando na minha rotina.\"",
+        "autor": "Flavia Vieira"
+      },
+      {
+        "quote": "\"É incrível como alguns pequenos ajustes na nossa rotina podem fazer tanta diferença no nosso sono. Gostei bastante da experiência como um todo.\"",
+        "autor": "Rômulo Perini"
+      },
+      {
+        "quote": "\"Estabelecer um passo a passo foi o mais importante para criar o mais difícil para um bom sono: rotina.\"",
+        "autor": "Liliam Rosalves"
+      },
+      {
+        "quote": "\"O kit é muito bom, as instruções são bem claras, acredito que funcionaria para quem não tem sono leve e outros fatores externos que influenciam na qualidade do sono.\"",
+        "autor": "Luciene de Lima"
+      },
+      {
+        "quote": "\"Consegui entender melhor meus desafios e melhorar minha rotina de sono com o método. Hoje tenho mais consciência de como isso impacta minha produtividade no dia a dia.\"",
+        "autor": "Gabriela Domingues"
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Comece<br>essa noite.",
+    "sub": "Escolha seu produto ou monte o kit completo.",
+    "produtos": [
+      {
+        "image": "/assets/produto-melatonina.jpg",
+        "name": "Melatonina",
+        "button_label": "Comprar",
+        "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
+      },
+      {
+        "image": "/assets/produto-magic5.jpg",
+        "name": "Magic5",
+        "button_label": "Comprar",
+        "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/"
+      },
+      {
+        "image": "/assets/produto-kit.jpg",
+        "name": "Kit Ritual",
+        "button_label": "Montar ritual",
+        "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/"
+      }
+    ],
+    "info": [
+      "Frete grátis acima de R$150",
+      "Parcelamento disponível"
+    ]
+  },
+  "melatonina": {
+    "video": "/assets/melatonina.mp4",
+    "tag": "Produto 01",
+    "headline": "Melatonina.<br><em>Do jeito que<br>deveria funcionar.</em>",
+    "sub": "0,21 mg por gota. Sabor maracujá. Solução oral de absorção rápida — sem o excesso das cápsulas de farmácia. A dose certa, no momento certo, direto para o seu organismo.",
+    "specs": [
+      "1 gota = 1 dose · 0,21 mg de melatonina",
+      "Absorção sublingual — age mais rápido que cápsulas",
+      "Sabor maracujá · 30 mL · Solução oral"
+    ],
+    "button_label": "Comprar",
+    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
   },
   "kit": {
     "image": "/assets/kit-ritual.jpg",
@@ -62,28 +116,13 @@
     "button_label": "Montar meu ritual",
     "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/"
   },
-  "depoimentos": {
-    "eyebrow": "Quem já dorme melhor",
-    "slides": [
-      { "quote": "\"O relaxamento era extremamente rápido e quase imediato. Fiquei impressionada com o sono profundo que entrei e acordando descansada. Adorei e já estou adotando na minha rotina.\"", "autor": "Flavia Vieira" },
-      { "quote": "\"É incrível como alguns pequenos ajustes na nossa rotina podem fazer tanta diferença no nosso sono. Gostei bastante da experiência como um todo.\"", "autor": "Rômulo Perini" },
-      { "quote": "\"Estabelecer um passo a passo foi o mais importante para criar o mais difícil para um bom sono: rotina.\"", "autor": "Liliam Rosalves" },
-      { "quote": "\"O kit é muito bom, as instruções são bem claras, acredito que funcionaria para quem não tem sono leve e outros fatores externos que influenciam na qualidade do sono.\"", "autor": "Luciene de Lima" },
-      { "quote": "\"Consegui entender melhor meus desafios e melhorar minha rotina de sono com o método. Hoje tenho mais consciência de como isso impacta minha produtividade no dia a dia.\"", "autor": "Gabriela Domingues" }
-    ]
-  },
-  "cta": {
-    "headline": "Comece<br>essa noite.",
-    "sub": "Escolha seu produto ou monte o kit completo.",
-    "produtos": [
-      { "image": "/assets/produto-melatonina.jpg", "name": "Melatonina", "button_label": "Comprar", "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/" },
-      { "image": "/assets/produto-magic5.jpg", "name": "Magic5", "button_label": "Comprar", "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/" },
-      { "image": "/assets/produto-kit.jpg", "name": "Kit Ritual", "button_label": "Montar ritual", "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/" }
-    ],
-    "info": [
-      "Frete grátis acima de R$150",
-      "Parcelamento disponível"
-    ]
+  "hero": {
+    "image": "/assets/hero.jpg",
+    "tag": "Sono com qualidade",
+    "headline": "Dormir bem<br>não é luxo.<br>É o hábito que<br>muda tudo.",
+    "sub": "wellbie — suplementos pensados para quem leva o sono a sério.",
+    "button_label": "Conheça os produtos ↓",
+    "button_url": "#produtos"
   },
   "footer": {
     "logo": "/assets/logo.png",
