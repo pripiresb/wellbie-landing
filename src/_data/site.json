@@ -28,7 +28,7 @@
     "tag": "A ciência por trás do sono",
     "headline": "Você sacrifica o sono<br>para ser mais produtivo",
     "sub": "É exatamente o contrário que acontece.",
-    "intro": "A ciência mostra que o sono insuficiente compromete o cérebro, o coração, o metabolismo, a saúde mental e até a pele. \nÉ o envelhecimento acelerando e você nem percebe.",
+    "intro": "O sono insuficiente compromete o cérebro, o coração, o metabolismo, a saúde mental e até a pele. \nÉ o envelhecimento acelerando e você nem percebe.",
     "bullets": [
       {
         "destaque": "Até 40% menos foco e atenção",
@@ -73,8 +73,8 @@
   "melatonina": {
     "video": "/assets/melatonina.mp4",
     "tag": "Produto 01",
-    "headline": "Melatonina.<br><em>Do jeito que<br>deveria funcionar.</em>",
-    "sub": "0,21 mg por gota. Sabor maracujá. Solução oral de absorção rápida — sem o excesso das cápsulas de farmácia. A dose certa, no momento certo, direto para o seu organismo.",
+    "headline": "Melatonina<br><em>Do jeito que<br>deveria funcionar</em>",
+    "sub": "0,21 mg por gota. Sabor maracujá. Solução oral de absorção rápida, mais prático e fácil que cápsulas. A dose certa, no momento certo, direto para o seu organismo.",
     "specs": [
       "1 gota = 1 dose · 0,21 mg de melatonina",
       "Absorção sublingual — age mais rápido que cápsulas",
@@ -86,7 +86,7 @@
   "magic5": {
     "video": "/assets/magnesio.mp4",
     "tag": "Produto 02",
-    "headline": "Seu corpo não relaxa<br>porque sua mente<br>não para.<br><em>Magic5 é para isso.</em>",
+    "headline": "Você não relaxa<br>porque sua mente<br>não para.<br><em>Magic5 é para isso</em>",
     "sub": "5 tipos de magnésio selecionados para o que acontece antes de você tentar dormir: tensão muscular, ansiedade, ativação do sistema nervoso. Isso não é fraqueza — é fisiologia.",
     "specs": [
       "Dimalato · Quelato · Citrato · Óxido · Ascorbato",
@@ -99,8 +99,8 @@
   "kit": {
     "image": "/assets/kit-ritual.jpg",
     "tag": "Lançamento",
-    "headline": "O ritual que faltava<br>para a sua noite.",
-    "sub": "Montamos tudo que você precisa para criar um ritual de sono real. Não é um kit promocional — é um ponto de partida para uma rotina que funciona.",
+    "headline": "O ritual que faltava<br>para a sua noite",
+    "sub": "Montamos tudo que você precisa para criar um ritual de sono real. O ponto de partida para uma rotina que funciona.",
     "items": [
       "Melatonina wellbie",
       "Magic5 wellbie",
@@ -137,8 +137,8 @@
     ]
   },
   "cta": {
-    "headline": "Comece<br>essa noite.",
-    "sub": "Escolha seu produto ou monte o kit completo.",
+    "headline": "Comece<br>essa noite",
+    "sub": "Escolha seu produto ou monte o kit completo",
     "produtos": [
       {
         "image": "/assets/produto-melatonina.jpg",
@@ -169,7 +169,7 @@
     "contact_label": "Contato",
     "email": "ola@wellbie.com.br",
     "phone": "(11) 94869-0919",
-    "copyright": "© 2026 wellbie · Sono com qualidade",
+    "copyright": "© 2026 Wellbie | Sono com qualidade",
     "razao_social": "WELLBIE COMÉRCIO DE PRODUTOS LTDA",
     "cnpj": "CNPJ 65.535.088/0001-91"
   }
