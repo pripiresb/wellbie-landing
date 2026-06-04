@@ -1,10 +1,34 @@
 {
+  "nav": {
+    "links": [
+      {
+        "label": "Quem somos",
+        "url": "#"
+      },
+      {
+        "label": "Produtos",
+        "url": "https://wellbie.lojavirtualnuvem.com.br/produtos/"
+      },
+      {
+        "label": "Contato",
+        "url": "https://wellbie.lojavirtualnuvem.com.br/contato/"
+      }
+    ]
+  },
+  "hero": {
+    "image": "/assets/hero.jpg",
+    "tag": "wellbie | Sono com qualidade",
+    "headline": "Seu corpo<br>sabe dormir.<br>Só precisa do<br>ambiente certo",
+    "sub": "Melatonina, magnésio e um ritual de sono completo para um sono profundo e reparador",
+    "button_label": "Conheça os produtos ↓",
+    "button_url": "#produtos"
+  },
   "problema": {
     "image": "/assets/problema.jpg",
     "tag": "A ciência por trás do sono",
     "headline": "Você sacrifica o sono<br>para ser mais produtivo",
     "sub": "É exatamente o contrário que acontece.",
-    "intro": "Dormir mal não afeta só o dia seguinte: a ciência mostra que o sono insuficiente compromete o cérebro, o coração, o metabolismo, a saúde mental e até a pele. Não é um problema de cansaço. É um problema de saúde.",
+    "intro": "A ciência mostra que o sono insuficiente compromete o cérebro, o coração, o metabolismo, a saúde mental e até a pele. É o envelhecimento acelerando e você nem percebe.",
     "bullets": [
       {
         "destaque": "Até 40% menos foco e atenção",
@@ -12,7 +36,7 @@
         "fonte": "University of California, Berkeley"
       },
       {
-        "destaque": "Dobro do risco de depressão",
+        "destaque": "Dobro do risco de depressão:",
         "texto": "a insônia é um dos maiores fatores de risco para ansiedade e depressão",
         "fonte": "Huazhong University of Science and Technology"
       },
@@ -32,35 +56,32 @@
         "fonte": "Huazhong University of Science and Technology"
       },
       {
-        "destaque": "Mais sinais de envelhecimento da pele",
+        "destaque": "Mais sinais de envelhecimento da pele:",
         "texto": "linhas finas, flacidez e perda de elasticidade",
         "fonte": "University Hospitals Case Medical Center"
       },
       {
-        "destaque": "+28% no hormônio da fome",
-        "texto": "noites mal dormidas aumentam a grelina e a vontade de doce",
+        "destaque": "+28% na grelina, hormônio da fome:",
+        "texto": "noites mal dormidas aumentam a fome e vontade de doce",
         "fonte": "University of Chicago"
       }
     ],
-    "fecho": "Não é alarmismo — é fisiologia sendo ignorada. E a boa notícia: sono é um hábito que se reconstrói. É exatamente isso que a wellbie ajuda você a fazer.",
+    "fecho": "A boa notícia: sono é um hábito que se reconstrói. É exatamente isso que a Wellbie ajuda você a fazer. Confira nosso e-book com dicas valiosas para a saúde do seu sono.",
     "ebook_label": "Conheça nosso e-book",
     "ebook_url": "#"
   },
-  "nav": {
-    "links": [
-      {
-        "label": "Quem somos",
-        "url": "#"
-      },
-      {
-        "label": "Produtos",
-        "url": "https://wellbie.lojavirtualnuvem.com.br/produtos/"
-      },
-      {
-        "label": "Contato",
-        "url": "https://wellbie.lojavirtualnuvem.com.br/contato/"
-      }
-    ]
+  "melatonina": {
+    "video": "/assets/melatonina.mp4",
+    "tag": "Produto 01",
+    "headline": "Melatonina.<br><em>Do jeito que<br>deveria funcionar.</em>",
+    "sub": "0,21 mg por gota. Sabor maracujá. Solução oral de absorção rápida — sem o excesso das cápsulas de farmácia. A dose certa, no momento certo, direto para o seu organismo.",
+    "specs": [
+      "1 gota = 1 dose · 0,21 mg de melatonina",
+      "Absorção sublingual — age mais rápido que cápsulas",
+      "Sabor maracujá · 30 mL · Solução oral"
+    ],
+    "button_label": "Comprar",
+    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
   },
   "magic5": {
     "video": "/assets/magnesio.mp4",
@@ -74,6 +95,21 @@
     ],
     "button_label": "Comprar",
     "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/"
+  },
+  "kit": {
+    "image": "/assets/kit-ritual.jpg",
+    "tag": "Lançamento",
+    "headline": "O ritual que faltava<br>para a sua noite.",
+    "sub": "Montamos tudo que você precisa para criar um ritual de sono real. Não é um kit promocional — é um ponto de partida para uma rotina que funciona.",
+    "items": [
+      "Melatonina wellbie",
+      "Magic5 wellbie",
+      "Vela aromática",
+      "Máscara de dormir",
+      "Fone de ouvido"
+    ],
+    "button_label": "Montar meu ritual",
+    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/"
   },
   "depoimentos": {
     "eyebrow": "Quem já dorme melhor",
@@ -127,42 +163,6 @@
       "Frete grátis acima de R$150",
       "Parcelamento disponível"
     ]
-  },
-  "melatonina": {
-    "video": "/assets/melatonina.mp4",
-    "tag": "Produto 01",
-    "headline": "Melatonina.<br><em>Do jeito que<br>deveria funcionar.</em>",
-    "sub": "0,21 mg por gota. Sabor maracujá. Solução oral de absorção rápida — sem o excesso das cápsulas de farmácia. A dose certa, no momento certo, direto para o seu organismo.",
-    "specs": [
-      "1 gota = 1 dose · 0,21 mg de melatonina",
-      "Absorção sublingual — age mais rápido que cápsulas",
-      "Sabor maracujá · 30 mL · Solução oral"
-    ],
-    "button_label": "Comprar",
-    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
-  },
-  "kit": {
-    "image": "/assets/kit-ritual.jpg",
-    "tag": "Lançamento",
-    "headline": "O ritual que faltava<br>para a sua noite.",
-    "sub": "Montamos tudo que você precisa para criar um ritual de sono real. Não é um kit promocional — é um ponto de partida para uma rotina que funciona.",
-    "items": [
-      "Melatonina wellbie",
-      "Magic5 wellbie",
-      "Vela aromática",
-      "Máscara de dormir",
-      "Fone de ouvido"
-    ],
-    "button_label": "Montar meu ritual",
-    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/"
-  },
-  "hero": {
-    "image": "/assets/hero.jpg",
-    "tag": "wellbie | Sono com qualidade",
-    "headline": "Seu corpo<br>sabe dormir.<br>Só precisa do<br>ambiente certo",
-    "sub": "Melatonina, magnésio e um ritual de sono completo para um sono profundo e reparador",
-    "button_label": "Conheça os produtos ↓",
-    "button_url": "#produtos"
   },
   "footer": {
     "logo": "/assets/logo.png",
