@@ -7,11 +7,11 @@
       },
       {
         "label": "Produtos",
-        "url": "https://wellbie.lojavirtualnuvem.com.br/produtos/"
+        "url": "#produtos"
       },
       {
         "label": "Contato",
-        "url": "https://wellbie.lojavirtualnuvem.com.br/contato/"
+        "url": "https://forms.gle/ZrdB2X1dvUjaPAat7"
       }
     ]
   },
@@ -81,7 +81,7 @@
       "Sabor maracujá · 30 mL · Solução oral"
     ],
     "button_label": "Saiba mais",
-    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
+    "button_url": "https://forms.gle/ZrdB2X1dvUjaPAat7"
   },
   "magic5": {
     "video": "/assets/magnesio.mp4",
@@ -93,8 +93,8 @@
       "60 cápsulas · 1 dose = 2 cápsulas por noite",
       "Suplemento alimentar em cápsulas"
     ],
-    "button_label": "Comprar",
-    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/"
+    "button_label": "Saiba mais",
+    "button_url": "https://forms.gle/ZrdB2X1dvUjaPAat7"
   },
   "kit": {
     "image": "/assets/kit-ritual.jpg",
@@ -108,8 +108,8 @@
       "Máscara de dormir",
       "Fone de ouvido"
     ],
-    "button_label": "Montar meu ritual",
-    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/"
+    "button_label": "Quero saber primeiro",
+    "button_url": "https://forms.gle/ZrdB2X1dvUjaPAat7"
   },
   "depoimentos": {
     "eyebrow": "Quem já dorme melhor",
