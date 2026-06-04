@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wellbie — Sono com qualidade</title>
 <meta name="description" content="wellbie — suplementos pensados para quem leva o sono a sério. Melatonina e Magic5.">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
   :root {
     --creme:       #EDEAE6;
@@ -306,6 +307,19 @@
   goTo(0);
   startTimer();
 })();
+</script>
+
+<script>
+  // Login do editor: ao confirmar o convite/login, leva direto ao painel /admin
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 </body>
 </html>
