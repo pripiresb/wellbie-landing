@@ -47,15 +47,25 @@ collections:
               - { label: "Link do botão", name: "button_url", widget: "string" }
 
           # ── PROBLEMA ──
-          - label: "Seção: Por que você dorme mal"
+          - label: "Seção: A ciência por trás do sono"
             name: "problema"
             widget: "object"
             fields:
               - { label: "Imagem de fundo", name: "image", widget: "image" }
               - { label: "Tag", name: "tag", widget: "string" }
               - { label: "Título", name: "headline", widget: "text", hint: "Use <br> para quebrar linha." }
-              - { label: "Subtítulo", name: "sub", widget: "text" }
-              - { label: "Frase (manifesto)", name: "manifesto", widget: "text" }
+              - { label: "Subtítulo (frase em itálico)", name: "sub", widget: "text" }
+              - { label: "Introdução", name: "intro", widget: "text" }
+              - label: "Dados científicos (bullets)"
+                name: "bullets"
+                widget: "list"
+                summary: "{{fields.destaque}}"
+                fields:
+                  - { label: "Destaque (em negrito)", name: "destaque", widget: "string" }
+                  - { label: "Complemento", name: "texto", widget: "string", required: false }
+              - { label: "Frase de fechamento", name: "fecho", widget: "text" }
+              - { label: "Texto do botão e-book", name: "ebook_label", widget: "string", required: false, hint: "Deixe em branco para esconder o botão." }
+              - { label: "Link do botão e-book (página do produto na Nuvemshop)", name: "ebook_url", widget: "string", required: false }
 
           # ── MELATONINA ──
           - label: "Produto 1: Melatonina"

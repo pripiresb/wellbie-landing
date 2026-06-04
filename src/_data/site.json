@@ -4,7 +4,40 @@
     "tag": "A ciência por trás do sono",
     "headline": "Você sacrifica o sono<br>para ser mais produtivo",
     "sub": "É exatamente o contrário que acontece.",
-    "manifesto": "Uma noite mal dormida reduz sua capacidade de foco em até 40%. \nDuas semanas com 6h de sono têm o mesmo efeito cognitivo que ficar 24h acordado. \nAnsiedade, irritabilidade, decisões ruins — a piora vem primeiro no sono, depois em todo o resto. \nO sono não é recompensa. É infraestrutura de saúde — e a razão de existir da Wellbie."
+    "intro": "Dormir mal não afeta só o dia seguinte: a ciência mostra que o sono insuficiente compromete o cérebro, o coração, o metabolismo, a saúde mental e até a pele. Não é um problema de cansaço. É um problema de saúde.",
+    "bullets": [
+      {
+        "destaque": "Até 40% menos foco e atenção",
+        "texto": "após uma única noite mal dormida"
+      },
+      {
+        "destaque": "Dobro do risco de depressão",
+        "texto": "— a insônia é um dos maiores fatores de risco para ansiedade e depressão"
+      },
+      {
+        "destaque": "+45% de risco de infarto",
+        "texto": "com privação crônica de sono"
+      },
+      {
+        "destaque": "+40% de risco de demência",
+        "texto": "ao longo da vida"
+      },
+      {
+        "destaque": "+22% de risco de diabetes tipo 2",
+        "texto": "com 6h ou menos de sono"
+      },
+      {
+        "destaque": "Maiores sinais de envelhecimento da pele:",
+        "texto": "linhas finas, flacidez e perda de elasticidade"
+      },
+      {
+        "destaque": "Mais fome e vontade de doce:",
+        "texto": "noites mal dormidas elevam a grelina, o hormônio da fome, em até 28%"
+      }
+    ],
+    "fecho": "Não é alarmismo — é fisiologia sendo ignorada. E a boa notícia: sono é um hábito que se reconstrói. É exatamente isso que a wellbie ajuda você a fazer.",
+    "ebook_label": "Conheça nosso e-book",
+    "ebook_url": "#"
   },
   "nav": {
     "links": [

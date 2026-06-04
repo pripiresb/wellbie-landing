@@ -47,9 +47,16 @@
   .problema-empty { position: relative; z-index: 1; }
   .problema-text { position: relative; z-index: 1; padding: 96px 64px; display: flex; flex-direction: column; justify-content: center; background: rgba(39,39,35,0.52); backdrop-filter: blur(3px); }
   .problema-headline { font-family: var(--serif); font-size: 48px; font-weight: 400; color: var(--creme); line-height: 1.1; margin-bottom: 24px; }
-  .problema-sub { font-size: 17px; color: var(--creme); opacity: 0.75; line-height: 1.7; margin-bottom: 40px; }
+  .problema-sub { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--nude); line-height: 1.4; margin-bottom: 32px; }
+  .problema-intro { font-size: 16px; color: var(--creme); opacity: 0.82; line-height: 1.7; margin-bottom: 36px; max-width: 480px; }
+  .problema-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; max-width: 480px; }
+  .problema-list li { position: relative; padding-left: 22px; font-size: 15px; color: var(--creme); opacity: 0.85; line-height: 1.55; }
+  .problema-list li::before { content: '•'; position: absolute; left: 2px; top: -1px; color: var(--nude); font-size: 18px; }
+  .problema-list li strong { font-weight: 700; opacity: 1; }
+  .problema-fecho { font-family: var(--serif); font-size: 19px; font-style: italic; color: var(--nude); line-height: 1.6; margin-bottom: 36px; max-width: 480px; }
+  .btn-ebook { display: inline-block; align-self: flex-start; padding: 14px 34px; font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: var(--nude); color: var(--cinza); text-decoration: none; transition: opacity 0.2s; }
+  .btn-ebook:hover { opacity: 0.85; }
   .divider { width: 48px; height: 1px; background: var(--nude); margin: 40px 0; }
-  .manifesto-text { font-family: var(--serif); font-size: 20px; font-style: italic; color: var(--nude); line-height: 1.6; }
 
   .melatonina { background: var(--azul-claro); display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; padding: 0; }
   .melatonina .produto-text { padding: 96px 64px; display: flex; flex-direction: column; justify-content: center; }
@@ -193,8 +200,16 @@
     <p class="section-tag" style="color:var(--nude);">{{ site.problema.tag }}</p>
     <h2 class="problema-headline">{{ site.problema.headline | safe }}</h2>
     <p class="problema-sub">{{ site.problema.sub }}</p>
-    <div class="divider"></div>
-    <p class="manifesto-text">{{ site.problema.manifesto }}</p>
+    <p class="problema-intro">{{ site.problema.intro }}</p>
+    <ul class="problema-list">
+      {% for item in site.problema.bullets %}
+      <li><strong>{{ item.destaque }}</strong> {{ item.texto }}</li>
+      {% endfor %}
+    </ul>
+    <p class="problema-fecho">{{ site.problema.fecho }}</p>
+    {% if site.problema.ebook_label %}
+    <a class="btn-ebook" href="{{ site.problema.ebook_url }}">{{ site.problema.ebook_label }}</a>
+    {% endif %}
   </div>
   <div class="problema-empty"></div>
 </section>
