@@ -49,10 +49,15 @@
   .problema-headline { font-family: var(--serif); font-size: 48px; font-weight: 400; color: var(--creme); line-height: 1.1; margin-bottom: 24px; }
   .problema-sub { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--nude); line-height: 1.4; margin-bottom: 32px; }
   .problema-intro { font-size: 16px; color: var(--creme); opacity: 0.82; line-height: 1.7; margin-bottom: 36px; max-width: 480px; }
-  .problema-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; max-width: 480px; }
-  .problema-list li { position: relative; padding-left: 22px; font-size: 15px; color: var(--creme); opacity: 0.85; line-height: 1.55; }
-  .problema-list li::before { content: '•'; position: absolute; left: 2px; top: -1px; color: var(--nude); font-size: 18px; }
-  .problema-list li strong { font-weight: 700; opacity: 1; }
+  .problema-rotator { position: relative; min-height: 150px; max-width: 480px; margin-bottom: 20px; }
+  .prob-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.8s ease; pointer-events: none; }
+  .prob-slide.active { opacity: 1; pointer-events: auto; }
+  .prob-dado { font-family: var(--serif); font-size: 27px; font-weight: 400; color: var(--creme); line-height: 1.4; margin-bottom: 16px; }
+  .prob-dado strong { color: var(--nude); font-weight: 700; }
+  .prob-fonte { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--creme); opacity: 0.5; }
+  .prob-dots { display: flex; gap: 8px; margin-bottom: 36px; }
+  .prob-dot { width: 6px; height: 6px; border-radius: 50%; border: none; padding: 0; cursor: pointer; background: rgba(237,234,230,0.3); transition: all 0.35s ease; }
+  .prob-dot.active { width: 20px; border-radius: 3px; background: var(--nude); }
   .problema-fecho { font-family: var(--serif); font-size: 19px; font-style: italic; color: var(--nude); line-height: 1.6; margin-bottom: 36px; max-width: 480px; }
   .btn-ebook { display: inline-block; align-self: flex-start; padding: 14px 34px; font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: var(--nude); color: var(--cinza); text-decoration: none; transition: opacity 0.2s; }
   .btn-ebook:hover { opacity: 0.85; }
@@ -149,6 +154,8 @@
     .problema-empty { display: none; }
     .melatonina .produto-image, .magic5 .produto-image { order: -1; }
     .problema-headline, .produto-headline { font-size: 34px; }
+    .prob-dado { font-size: 22px; }
+    .problema-rotator { min-height: 180px; }
 
     /* KIT — imagem com altura definida, chips menores, botão reposicionado */
     .kit-text { padding: 56px 24px 36px; }
@@ -201,11 +208,17 @@
     <h2 class="problema-headline">{{ site.problema.headline | safe }}</h2>
     <p class="problema-sub">{{ site.problema.sub }}</p>
     <p class="problema-intro">{{ site.problema.intro }}</p>
-    <ul class="problema-list">
+    <div class="problema-rotator">
       {% for item in site.problema.bullets %}
-      <li><strong>{{ item.destaque }}</strong> {{ item.texto }}</li>
+      <div class="prob-slide{% if loop.first %} active{% endif %}">
+        <p class="prob-dado"><strong>{{ item.destaque }}</strong> {{ item.texto }}</p>
+        <p class="prob-fonte">{{ item.fonte }}</p>
+      </div>
       {% endfor %}
-    </ul>
+    </div>
+    <div class="prob-dots">
+      {% for item in site.problema.bullets %}<button class="prob-dot{% if loop.first %} active{% endif %}" data-index="{{ loop.index0 }}" aria-label="Dado {{ loop.index }}"></button>{% endfor %}
+    </div>
     <p class="problema-fecho">{{ site.problema.fecho }}</p>
     {% if site.problema.ebook_label %}
     <a class="btn-ebook" href="{{ site.problema.ebook_url }}">{{ site.problema.ebook_label }}</a>
@@ -345,6 +358,26 @@
   dots.forEach(dot => { dot.addEventListener('click', () => { goTo(parseInt(dot.dataset.index)); startTimer(); }); });
   goTo(0);
   startTimer();
+})();
+</script>
+
+<script>
+(function () {
+  const slides = document.querySelectorAll('.problema-rotator .prob-slide');
+  const dots   = document.querySelectorAll('.prob-dots .prob-dot');
+  if (slides.length < 2) return;
+  const DURATION = 3500;
+  let current = 0, timer;
+  function goTo(i) {
+    slides[current].classList.remove('active');
+    if (dots[current]) dots[current].classList.remove('active');
+    current = (i + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    if (dots[current]) dots[current].classList.add('active');
+  }
+  function start() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), DURATION); }
+  dots.forEach(d => d.addEventListener('click', () => { goTo(parseInt(d.dataset.index)); start(); }));
+  start();
 })();
 </script>
 

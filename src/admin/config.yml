@@ -56,13 +56,14 @@ collections:
               - { label: "Título", name: "headline", widget: "text", hint: "Use <br> para quebrar linha." }
               - { label: "Subtítulo (frase em itálico)", name: "sub", widget: "text" }
               - { label: "Introdução", name: "intro", widget: "text" }
-              - label: "Dados científicos (bullets)"
+              - label: "Dados científicos (animados)"
                 name: "bullets"
                 widget: "list"
                 summary: "{{fields.destaque}}"
                 fields:
                   - { label: "Destaque (em negrito)", name: "destaque", widget: "string" }
                   - { label: "Complemento", name: "texto", widget: "string", required: false }
+                  - { label: "Fonte (letra pequena embaixo)", name: "fonte", widget: "string", required: false }
               - { label: "Frase de fechamento", name: "fecho", widget: "text" }
               - { label: "Texto do botão e-book", name: "ebook_label", widget: "string", required: false, hint: "Deixe em branco para esconder o botão." }
               - { label: "Link do botão e-book (página do produto na Nuvemshop)", name: "ebook_url", widget: "string", required: false }
