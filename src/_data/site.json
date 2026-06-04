@@ -2,8 +2,8 @@
   "nav": {
     "links": [
       { "label": "Quem somos", "url": "#" },
-      { "label": "Produtos", "url": "#produtos" },
-      { "label": "Contato", "url": "#contato" }
+      { "label": "Produtos", "url": "https://wellbie.lojavirtualnuvem.com.br/produtos/" },
+      { "label": "Contato", "url": "https://wellbie.lojavirtualnuvem.com.br/contato/" }
     ]
   },
   "hero": {
@@ -32,7 +32,7 @@
       "Sabor maracujá · 30 mL · Solução oral"
     ],
     "button_label": "Comprar",
-    "button_url": "#"
+    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/"
   },
   "magic5": {
     "video": "/assets/magnesio.mp4",
@@ -45,7 +45,7 @@
       "Suplemento alimentar em cápsulas"
     ],
     "button_label": "Comprar",
-    "button_url": "#"
+    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/"
   },
   "kit": {
     "image": "/assets/kit-ritual.jpg",
@@ -60,7 +60,7 @@
       "Fone de ouvido"
     ],
     "button_label": "Montar meu ritual",
-    "button_url": "#"
+    "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/"
   },
   "depoimentos": {
     "eyebrow": "Quem já dorme melhor",
@@ -76,9 +76,9 @@
     "headline": "Comece<br>essa noite.",
     "sub": "Escolha seu produto ou monte o kit completo.",
     "produtos": [
-      { "image": "/assets/produto-melatonina.jpg", "name": "Melatonina", "button_label": "Comprar", "button_url": "#" },
-      { "image": "/assets/produto-magic5.jpg", "name": "Magic5", "button_label": "Comprar", "button_url": "#" },
-      { "image": "/assets/produto-kit.jpg", "name": "Kit Ritual", "button_label": "Montar ritual", "button_url": "#" }
+      { "image": "/assets/produto-melatonina.jpg", "name": "Melatonina", "button_label": "Comprar", "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/melatonina-maracuja-wellbie-30ml/" },
+      { "image": "/assets/produto-magic5.jpg", "name": "Magic5", "button_label": "Comprar", "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/magic5-5-magnesios-60-capsulas/" },
+      { "image": "/assets/produto-kit.jpg", "name": "Kit Ritual", "button_label": "Montar ritual", "button_url": "https://wellbie.lojavirtualnuvem.com.br/produtos/kit-sono-15-dias-melatonina-mascara-fone-anti-ruido-vela-passo-a-passo-e-livro-de-acompanhamento/" }
     ],
     "info": [
       "Frete grátis acima de R$150",
