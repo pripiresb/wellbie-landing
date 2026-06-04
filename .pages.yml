@@ -61,7 +61,7 @@ content:
         label: "Produto 1: Melatonina"
         type: object
         fields:
-          - { name: video, label: Vídeo, type: file }
+          - { name: video, label: "Vídeo (caminho do arquivo, ex: /assets/melatonina.mp4)", type: string }
           - { name: tag, label: Tag, type: string }
           - { name: headline, label: Título, type: text, description: "Use <br> e <em>itálico</em>." }
           - { name: sub, label: Descrição, type: text }
@@ -74,7 +74,7 @@ content:
         label: "Produto 2: Magic5"
         type: object
         fields:
-          - { name: video, label: Vídeo, type: file }
+          - { name: video, label: "Vídeo (caminho do arquivo, ex: /assets/melatonina.mp4)", type: string }
           - { name: tag, label: Tag, type: string }
           - { name: headline, label: Título, type: text, description: "Use <br> e <em>itálico</em>." }
           - { name: sub, label: Descrição, type: text }
