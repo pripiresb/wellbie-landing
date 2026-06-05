@@ -2,10 +2,12 @@ module.exports = function (eleventyConfig) {
   // Copia as imagens/vídeos como estão
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  // Domínio próprio do GitHub Pages (gera _site/CNAME).
+  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
+
   return {
-    // No GitHub Pages o site fica em /wellbie-landing/.
-    // (Quando ligar o domínio próprio wellbie.com.br, trocar para "/".)
-    pathPrefix: "/wellbie-landing/",
+    // Com domínio próprio (www.wellbie.com.br) o site serve na raiz.
+    pathPrefix: "/",
     dir: {
       input: "src",
       output: "_site",
