@@ -5,6 +5,9 @@ module.exports = function (eleventyConfig) {
   // Domínio próprio do GitHub Pages (gera _site/CNAME).
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
+  // Favicon na raiz (o navegador busca /favicon.ico automaticamente).
+  eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
+
   return {
     // Com domínio próprio (www.wellbie.com.br) o site serve na raiz.
     pathPrefix: "/",
