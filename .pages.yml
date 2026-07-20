@@ -22,6 +22,30 @@ content:
               - { name: label, label: Texto, type: string }
               - { name: url, label: Link (URL), type: string }
 
+      # ── PÁGINA: QUEM SOMOS ──
+      - name: quem_somos
+        label: "Página: Quem somos"
+        type: object
+        fields:
+          - { name: manifesto_eyebrow, label: "Abertura — tag pequena", type: string }
+          - { name: manifesto_headline, label: "Abertura — título", type: text, description: "Use <em>texto</em> para itálico." }
+          - { name: manifesto_sub, label: "Abertura — subtítulo", type: text }
+          - { name: fundadora_eyebrow, label: "Fundadora — tag pequena", type: string }
+          - { name: fundadora_headline, label: "Fundadora — título", type: text }
+          - { name: fundadora_foto, label: "Fundadora — foto (computador)", type: image }
+          - { name: fundadora_foto_mobile, label: "Fundadora — foto (celular)", type: image }
+          - { name: fundadora_paragrafos, label: "Fundadora — parágrafos", type: text, list: true, description: "Um por linha. Use <strong>texto</strong> para negrito." }
+          - { name: fundadora_assinatura, label: "Fundadora — assinatura", type: string }
+          - { name: crencas_eyebrow, label: "No que acreditamos — tag", type: string }
+          - { name: crencas_headline, label: "No que acreditamos — título", type: text }
+          - { name: crencas_pilares, label: "No que acreditamos — 3 palavras", type: string, list: true }
+          - { name: crencas_texto, label: "No que acreditamos — texto", type: text }
+          - { name: cta_eyebrow, label: "Final — tag pequena", type: string }
+          - { name: cta_headline, label: "Final — título", type: text }
+          - { name: cta_sub, label: "Final — subtítulo", type: text }
+          - { name: cta_button_label, label: "Final — texto do botão", type: string }
+          - { name: cta_button_url, label: "Final — link do botão", type: string }
+
       # ── HERO ──
       - name: hero
         label: Topo (Hero)

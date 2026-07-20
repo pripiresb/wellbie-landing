@@ -3,7 +3,7 @@
     "links": [
       {
         "label": "Quem somos",
-        "url": "#"
+        "url": "/quem-somos/"
       },
       {
         "label": "Produtos",
@@ -14,6 +14,30 @@
         "url": "https://forms.gle/ZrdB2X1dvUjaPAat7"
       }
     ]
+  },
+  "quem_somos": {
+    "manifesto_eyebrow": "Quem somos",
+    "manifesto_headline": "A Wellbie nasceu da percepção de que a gente <em>esqueceu como desacelerar.</em>",
+    "manifesto_sub": "A noite virou continuação do dia — e o descanso, uma promessa que sempre fica pra depois.",
+    "fundadora_eyebrow": "Por que nós existimos",
+    "fundadora_headline": "Da minha própria rotina sem pausa — para ajudar quem vive a mesma coisa.",
+    "fundadora_foto": "/assets/quem-somos/fundadora-desktop.jpg",
+    "fundadora_foto_mobile": "/assets/quem-somos/fundadora-mobile.jpg",
+    "fundadora_paragrafos": [
+      "Eu me chamo <strong>Priscila Barroso</strong>. Por anos vivi a rotina intensa de executiva e, como tanta gente, tratei dormir mal como parte normal da correria — até entender que não precisava ser assim.",
+      "Quando comecei a olhar pro sono com mais consciência, unindo minha experiência ao estudo sobre hábitos, o descanso mudou a minha vida. A Wellbie nasce daí: da vontade de levar esse cuidado pra quem também termina o dia com a cabeça a mil e não consegue desligar.",
+      "<strong>Existimos pra que dormir bem deixe de ser promessa e vire hábito — pra você também.</strong>"
+    ],
+    "fundadora_assinatura": "Priscila Barroso · fundadora",
+    "crencas_eyebrow": "No que acreditamos",
+    "crencas_headline": "Acreditamos em hábitos que cabem na vida adulta.",
+    "crencas_pilares": ["Pequenos", "Repetidos", "Sustentáveis"],
+    "crencas_texto": "O tipo de mudança que se constrói no dia a dia e aparece nas noites com o tempo.",
+    "cta_eyebrow": "Comece essa noite",
+    "cta_headline": "Seu corpo sabe dormir.",
+    "cta_sub": "Nossa missão é tornar o sono uma prática de autocuidado — possível, consistente e transformadora.",
+    "cta_button_label": "Conheça os produtos",
+    "cta_button_url": "/#produtos"
   },
   "hero": {
     "image": "/assets/hero.jpg",
